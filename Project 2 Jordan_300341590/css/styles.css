@@ -1,0 +1,117 @@
+@charset "utf-8";
+
+
+/* 
+Project 2
+
+Author: Jordan SidneyDunu
+Date: 03/25/2021
+
+*/
+html {
+    background-color: peachpuff;
+}
+
+body {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+header > p {
+    text-align: left;
+}
+
+header > img {
+    float: right;
+}
+
+body > header {
+    font-family: Lato;
+    text-align: left;
+}
+
+nav.horizontal {
+    display: flex;
+    flex-flow: 1 1 auto;
+}
+
+h2,h3,h4,h5,h6 {
+    font-display: bold;
+    font-style: bold;
+    font-variant: normal;
+    text-decoration: solid;
+}
+
+footer {
+    text-decoration: solid;
+    font-style: bold;
+}
+
+article {
+    text-align: center;
+}
+
+section > img{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+}
+
+img#pic1 {
+    width: 33.3%;
+}
+
+img#pic2 {
+    width: 33.3%;
+}
+
+img#pic3 {
+    width: 33.3%;
+}
+
+img#pic4 {
+    width: 33.3%;
+}
+
+img#pic5 {
+    width: 33.3%;
+}
+
+img#pic6 {
+    width: 33.3%;
+}
+
+section {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    display: table-column;
+    column-width: auto;
+}
+
+/* =========================
+   Mobile Styles: 0 to 320px 
+   =========================
+*/
+@media only screen and (max-width: 320px) {
+    aside {
+        order: 99;
+    }
+    
+    footer {
+        order: 100;
+    }
+}
+
+/* ============================================
+   Tablet and Desktop Styles: 768px and greater 
+   ============================================
+*/
+@media only screen and (min-width: 768px) {
+    section {
+        display: flex;
+        flex-flow: row wrap;
+        flex: 1 1 auto;
+    }
+}
